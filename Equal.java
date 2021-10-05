@@ -12,23 +12,11 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     * Complete the 'equal' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY arr as parameter.
-     */
+   
 
     public static int equal(List<Integer> arr) {
     // Write your code here
-    /*The idea is to first find the minimum value in the list, 
-    subtract the same from each element and check the least step required to make
-    the value 0 using 1,2 and 5 (as given in question). 
     
-    
-    let this function be called f which takes minimum value min, it is possible that f(min)>f(min-1) or f(min)>f(min-2) 
-    but as the greatest denomination in question is 5 it is certain that f(min)<f(min-5) 
-    so our objective is to check till f(min-4) */
     ArrayList<Integer> res=new ArrayList<Integer>();
     //iterating loop only til 4 as f(min) is surely less than f(min-5) as discussed above
     for(int j=0;j<4;j++){
